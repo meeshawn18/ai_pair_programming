@@ -18,5 +18,5 @@ https://drive.google.com/drive/u/1/folders/1TFnrdLVGB2Tbu-Se2PGxvMB-rmBOuPFa
             pyinstaller --onefile --add-data "icons;icons" aipp_gui.py.py
 
 NOTE:
-1.	The GUI application requires an internet connection in order to communicate with the PaLM APIs.
+1.	The GUI application requires an internet connection for API key validation (explained in scenario walkthrough).
 2.	Running the executable takes some time to load initially. Please be patient while it loads. Once loaded, the operations on the GUI are carried out smoothly, assuming the hardware and software requirements mentioned above have been met.
