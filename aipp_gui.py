@@ -1,17 +1,21 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Nov  4 12:58:56 2023
+CIS 553 (FALL 2023) PROJECT
 
-@author: nveerappa
+GROUP: CODEFORMERS
+-----------------------
+| AI PAIR PROGRAMMING |
+-----------------------
+
+@author: Meeshawn Marathe, Nithesh Veerappa
+
+
 """
 import os
-# import tkinter as tk
 import customtkinter as ctk
 from PIL import Image, ImageTk
 from aiPairProgramming import AI_PAIR_PROGRAMMING
 
-
-key= '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'
 
 class GUI:
     def __init__(self):
@@ -124,16 +128,6 @@ class GUI:
                                          button_color = 'SteelBlue3')
         self.taskcombo.place(y = 90, x = 559)
         self.taskcombo.configure(state='disabled')
-        # task_btn_image_path = os.path.join(self.script_dir, "icons", "choice.png")
-        # task_btn_image = ImageTk.PhotoImage(Image.open(task_btn_image_path).resize((20,25)))
-        # self.submit_button_task = ctk.CTkButton(self.root, text="Select Task", 
-        #                               image = task_btn_image,
-        #                               command=self.picktask, 
-        #                               fg_color='SteelBlue3', 
-        #                               hover_color = "SteelBlue1",width = 70)
-        # self.submit_button_task.configure(state='disabled')
-        # self.submit_button_task.pack(pady=2)
-        # self.submit_button_task.place(y = 120, x = 400)
 
         
     ## Task Selection
@@ -206,7 +200,6 @@ class GUI:
         self.root.update()
         
     
-
 #%%
 if __name__ == "__main__":
     gui = GUI()
