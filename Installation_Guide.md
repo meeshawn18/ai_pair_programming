@@ -7,11 +7,11 @@ https://drive.google.com/drive/u/1/folders/1TFnrdLVGB2Tbu-Se2PGxvMB-rmBOuPFa
     - Make sure you are running Python version 3.9 and above.
     - (Optional) Create and activate a Virtual Python Environment using Anaconda. For more information, please visit: https://www.anaconda.com/download
     - Install Dependencies: Install the following Python Packages within your python environment:
-        pip install google-generativeai
-        pip install google-api-core
-        pip install customtkinter
-        pip install pillow
-        pip install pyinstaller
+        + pip install google-generativeai
+        + pip install google-api-core
+        + pip install customtkinter
+        + pip install pillow
+        + pip install pyinstaller
     -	Execute the following command to render the AI Pair Programming Assistant GUI within your python environment:
                                   python aipp_gui.py
     -	(Additional) Build an executable using the following command within your python environment:
