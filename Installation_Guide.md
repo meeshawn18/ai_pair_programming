@@ -1,8 +1,8 @@
 # Installation Guide:
-* For Windows Users: Download the Windows executable file (.exe) from the Google Drive Repository:
+1. For Windows Users: Download the Windows executable file (.exe) from the Google Drive Repository:
 https://drive.google.com/drive/u/1/folders/1TFnrdLVGB2Tbu-Se2PGxvMB-rmBOuPFa
-*	For Mac/Linux users, you can download the python source code from the associated GitHub repository and build an executable for the GUI locally as described below.
-*	Advanced Users (Windows/Linux/MacOS): Download the two python source files from the GitHub Repository:
+2.	For Mac/Linux users, you can download the python source code from the associated GitHub repository and build an executable for the GUI locally as described below.
+3.	Advanced Users (Windows/Linux/MacOS): Download the two python source files from the GitHub Repository:
   - Link: https://github.com/meeshawn18/ai_pair_programming 
   - Make sure you are running Python version 3.9 and above.
   - (Optional) Create and activate a Virtual Python Environment using Anaconda. For more information, please visit: https://www.anaconda.com/download
