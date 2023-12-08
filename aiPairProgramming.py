@@ -7,14 +7,8 @@ GROUP: CODEFORMERS
 | AI PAIR PROGRAMMING |
 -----------------------
 
-@author: Meeshawn Marathe
+@author: Meeshawn Marathe, Nithesh Veerappa
 
-On the main web app display, the user is presented with two options:
-    - Enter an existing API key if he has one:
-        aiPairProgObj = AI_PAIR_PROGRAMMING()
-
-    - Generate a new API key:
-        aiPairProgObj = AI_PAIR_PROGRAMMING(apiExists = False)
 
 """
 import os

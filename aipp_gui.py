@@ -15,6 +15,8 @@ import os
 import customtkinter as ctk
 from PIL import Image, ImageTk
 from aiPairProgramming import AI_PAIR_PROGRAMMING
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="customtkinter.windows.widgets.core_widget_classes.ctk_base_class")
 
 
 class GUI:
@@ -35,10 +37,10 @@ class GUI:
         
         self.script_dir = os.path.dirname(os.path.abspath(__file__))
         background_image_path = os.path.join(self.script_dir, "icons", "bg.jpg")
-        self.background_image = ImageTk.PhotoImage(Image.open(background_image_path))
+        background_image = ImageTk.PhotoImage(Image.open(background_image_path))
         
         
-        background_label = ctk.CTkLabel(self.root, image=self.background_image,text="")
+        background_label = ctk.CTkLabel(self.root, image=background_image,text="")
         background_label.place(x=0, y=0, relwidth=1, relheight=1)
         
         ## GUI: API key Generation
@@ -157,11 +159,6 @@ class GUI:
                                    fg_color='#D35B58', hover_color = "#C77C78") 
         self.genout_btn.place(x = 210, y = 680)
         self.genout_btn.configure(state='disabled')
-
-        
-        # self.text_input_label = ctk.CTkLabel(self.root, text="*** Place your code snippet here ***",
-        #                                justify='center')  
-        # self.text_input_label.place(x = 150, y = 120)
         
 
         self.outtext = ctk.CTkTextbox(self.root, width=600, height=500,
@@ -169,7 +166,6 @@ class GUI:
                                  activate_scrollbars = True,
                                  wrap = 'none')
         self.outtext.insert("0.0", "***Please wait for the Output***")
-        # self.outtext.pack(padx = 10, pady = 70, side = 'right')
         self.outtext.place(x = 667, y = 160)
         self.outtext.configure(state='disabled')
         
